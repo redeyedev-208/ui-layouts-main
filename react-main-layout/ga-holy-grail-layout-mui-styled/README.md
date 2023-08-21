@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Holy Grail Layout in React with Styled Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates how to implement the Holy Grail layout in a React application using styled components. The Holy Grail layout is a common web layout that features a header, a footer, and three columns, with the main content column being the largest and flanked by two sidebars. This project aims to showcase the implementation of this layout along with responsive behavior and testing using Jest.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To run this project locally, follow these steps:
 
-### `npm start`
+1. Clone this repository to your local machine:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ```bash
+   git clone https://github.com/your-username/holy-grail-layout-react.git
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Change into the project directory:
 
-### `npm test`
+   ```bash
+   cd holy-grail-layout-react
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install the project dependencies:
 
-### `npm run build`
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to see the Holy Grail layout in action.
 
-### `npm run eject`
+## Testing the Responsiveness
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After running the tests, you can observe that the snapshots are generated and stored in the `__snapshots__` directory.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Resize your browser window or use a responsive design testing tool to see how the layout adjusts to different screen sizes.
+2. Run the tests again to see that the snapshots match the responsive layout.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Triggering Test Failure and Fixing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Open the `App.js` file and intentionally modify one of the components' content.
+2. Run the tests using `npm test`. You will see that the test fails due to the snapshot mismatch.
+3. Fix the content back to its original state.
+4. Run the tests again using `npm test`. The tests should pass now that the snapshot has been updated to match the corrected content.
 
-## Learn More
+By going through the process of intentionally causing a test failure and then fixing it, you can become more comfortable with Jest and React Testing.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Testing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project includes Jest tests to ensure that the components render correctly and that the layout remains responsive. To run the tests, use the following command:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm test
+```

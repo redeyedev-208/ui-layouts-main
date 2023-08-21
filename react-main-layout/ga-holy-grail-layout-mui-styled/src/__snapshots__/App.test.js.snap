@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component renders correctly 1`] = `
+<div>
+  <div
+    class="css-rioki0"
+  >
+    <div
+      class="css-fbow1u"
+    >
+      <div
+        class="css-1b8lofo"
+      >
+        Header
+      </div>
+      <div
+        class="css-1sk2w71"
+      >
+        Sidebar
+      </div>
+      <div
+        class="css-1ktpr0t"
+      >
+        Nav
+      </div>
+      <div
+        class="css-1ktpr0t"
+      >
+        Main Content
+      </div>
+      <div
+        class="css-1b8lofo"
+      >
+        Footer
+      </div>
+    </div>
+  </div>
+</div>
+`;
