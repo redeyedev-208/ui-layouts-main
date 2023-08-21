@@ -39,6 +39,13 @@ After running the tests, you can observe that the snapshots are generated and st
 1. Resize your browser window or use a responsive design testing tool to see how the layout adjusts to different screen sizes.
 2. Run the tests again to see that the snapshots match the responsive layout.
 
+## Web Responsiveness
+![ga-holygrail-a11y-web](https://github.com/redeyedev-208/ui-layouts-main/assets/60634649/6de7b8d9-aa3b-4ed1-9cc8-ba5cc81143da)
+
+## Mobile Responsiveness
+![ga-holygrail-responsive](https://github.com/redeyedev-208/ui-layouts-main/assets/60634649/3ee076ec-75b4-48c0-a4c7-ca7d2918f87c)
+
+
 ## Triggering Test Failure and Fixing
 
 1. Open the `App.js` file and intentionally modify one of the components' content.
@@ -55,3 +62,5 @@ This project includes Jest tests to ensure that the components render correctly 
 ```bash
 npm test
 ```
+Test output should display as shown below by the image:
+![ga-holy-grail-jest-test](https://github.com/redeyedev-208/ui-layouts-main/assets/60634649/fc1e8447-f751-4eac-a15a-e59e425a3ffe)
